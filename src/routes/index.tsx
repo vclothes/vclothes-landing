@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { animate, motion, useInView, useScroll, useTransform, useSpring } from "framer-motion";
 import { Instagram, Mail, Menu } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
@@ -94,6 +94,12 @@ function Nav() {
             ))}
           </nav>
           <div className="flex items-center gap-3">
+            <Link
+              to="/provador"
+              className="hidden items-center gap-2 rounded-full border hairline px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary sm:inline-flex"
+            >
+              Experimentar
+            </Link>
             <a
               href="#contato"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.02] active:scale-[0.98]"
@@ -124,6 +130,14 @@ function Nav() {
                     </SheetClose>
                   ))}
                 </nav>
+                <SheetClose asChild>
+                  <Link
+                    to="/provador"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border hairline px-6 py-3 text-sm font-medium text-foreground"
+                  >
+                    Experimentar o provador
+                  </Link>
+                </SheetClose>
                 <SheetClose asChild>
                   <a
                     href="#contato"
@@ -252,7 +266,7 @@ function Hero() {
               </span>
             </a>
             <a
-              href="#como-funciona"
+              href="#solucao"
               className="inline-flex items-center gap-2 text-sm font-medium text-foreground underline-offset-4 hover:underline"
             >
               Ver como funciona
@@ -509,6 +523,20 @@ function Solution() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-20 flex justify-center lg:mt-32">
+          <Link
+            to="/provador"
+            className="group inline-flex items-center gap-2 rounded-full bg-ink px-8 py-4 text-base font-medium text-primary-foreground transition-transform hover:scale-[1.02] active:scale-[0.98]"
+          >
+            Experimentar o provador
+            <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary-foreground/15 transition-transform group-hover:translate-x-0.5">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </span>
+          </Link>
         </div>
       </div>
     </section>
