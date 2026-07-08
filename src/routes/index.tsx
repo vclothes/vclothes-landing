@@ -456,11 +456,9 @@ function Solution() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-              className={`grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-24 ${
-                i % 2 === 1 ? "lg:[&>div:first-child]:order-2" : ""
-              }`}
+              className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-24"
             >
-              <div>
+              <div className={`order-2 ${i % 2 === 1 ? "lg:order-2" : "lg:order-1"}`}>
                 <motion.div
                   whileHover={{ y: -8, scale: 1.015 }}
                   transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
@@ -494,7 +492,7 @@ function Solution() {
                   )}
                 </motion.div>
               </div>
-              <div>
+              <div className={`order-1 ${i % 2 === 1 ? "lg:order-1" : "lg:order-2"}`}>
                 <div className="text-display mb-6 text-6xl text-primary/30">{s.n}</div>
                 <h3 className="text-display mb-6 text-4xl text-ink md:text-5xl">{s.title}</h3>
                 <p className="max-w-lg text-lg leading-relaxed text-muted-foreground">{s.body}</p>
