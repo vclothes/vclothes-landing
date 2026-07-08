@@ -76,7 +76,7 @@ function Nav() {
   return (
     <header className="fixed top-0 z-50 w-full">
       <ScrollProgress />
-      <div className="glass-panel border-b hairline">
+      <div className="border-b hairline bg-background/60 backdrop-blur-lg">
         <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-6">
           <a href="#top" className="group flex items-center gap-3">
             <LogoMark className="h-9 w-9 transition-transform duration-300 group-hover:rotate-6" />
@@ -627,9 +627,9 @@ function Origin() {
           </div>
 
           <div className="lg:col-span-6">
-            <div className="group relative aspect-[4/5]">
+            <div className="group relative aspect-[4/5] overflow-hidden rounded-[2rem]">
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative h-[400px] w-[520px]">
+                <div className="relative h-[400px] w-[520px] scale-[0.6] sm:scale-[0.85] lg:scale-100">
                   <img
                     src={ceapCampus}
                     alt="Vista aérea do campus do CEAP Pedreira"
