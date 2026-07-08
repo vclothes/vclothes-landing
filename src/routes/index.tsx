@@ -625,9 +625,33 @@ function Origin() {
           </div>
 
           <div className="lg:col-span-6">
-            <div className="group relative aspect-[4/5] overflow-hidden rounded-[2rem]">
+            <div className="flex flex-col gap-4 lg:hidden">
+              <img
+                src={ceapCampus}
+                alt="Vista aérea do campus do CEAP Pedreira"
+                loading="lazy"
+                className="h-56 w-full rounded-2xl border-4 border-white object-cover shadow-xl sm:h-72"
+              />
+              <img
+                src={ceapCourt}
+                alt="Quadra poliesportiva do CEAP Pedreira"
+                loading="lazy"
+                className="h-56 w-full rounded-2xl border-4 border-white object-cover shadow-xl sm:h-72"
+              />
+              <div className="flex items-center gap-4 rounded-2xl border hairline bg-card p-4">
+                <img src={ceapLogo} alt="Logo do CEAP" className="h-9 w-auto shrink-0" />
+                <div>
+                  <div className="text-mono text-muted-foreground">CEAP · Pedreira, SP</div>
+                  <div className="mt-1 text-sm text-foreground">
+                    Centro Educacional Assistencial Profissionalizante
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative hidden aspect-[4/5] overflow-hidden rounded-[2rem] lg:block">
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative h-[400px] w-[520px] scale-[0.6] sm:scale-[0.85] lg:scale-100">
+                <div className="relative h-[400px] w-[520px]">
                   <img
                     src={ceapCampus}
                     alt="Vista aérea do campus do CEAP Pedreira"
