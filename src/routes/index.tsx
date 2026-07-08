@@ -6,9 +6,9 @@ import { useEffect, useRef, useState } from "react";
 import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
 import heroGarment from "@/assets/hero-garment.jpg";
-import garmentJacket from "@/assets/garment-jacket.jpg";
-import garmentPants from "@/assets/garment-pants.jpg";
-import garmentHoodie from "@/assets/garment-hoodie.jpg";
+import garmentJacket from "@/assets/garment-jacket.png";
+import garmentPants from "@/assets/garment-pants.png";
+import garmentHoodie from "@/assets/garment-hoodie.png";
 import stepUpload from "@/assets/step-upload.jpg";
 import stepSizing from "@/assets/step-sizing.jpg";
 import stepTryon from "@/assets/step-tryon.jpg";
@@ -312,7 +312,7 @@ function Hero() {
             <div key={i} className="flex gap-16">
               {[
                 "Visão computacional",
-                "IA de sizing",
+                "Em parceria com a 3DLOOK",
                 "Zero devoluções",
                 "Feito na periferia",
                 "Feira de Ciências 2026",
@@ -414,10 +414,10 @@ const steps = [
   {
     n: "02",
     title: "Algoritmo de alfaiataria",
-    body: "Cruzamos suas medidas com a modelagem real de cada marca. A V-Clothes sugere o tamanho ideal, do P ao XG.",
+    body: "Suas medidas são extraídas com a tecnologia da 3DLOOK, referência mundial em escaneamento corporal, e cruzadas com a modelagem real de cada marca. A V-Clothes sugere o tamanho ideal, do P ao XG.",
     img: stepSizing,
     alt: "Silhueta humana em wireframe azul com pontos de medição",
-    tags: ["IA", "Precisão", "Por marca"],
+    tags: ["3DLOOK", "Precisão", "Por marca"],
   },
   {
     n: "03",
@@ -553,18 +553,17 @@ function Gallery() {
               className="group relative overflow-hidden rounded-3xl border hairline bg-card"
               style={{ boxShadow: "var(--shadow-card)" }}
             >
-              <div className="relative aspect-[3/4] overflow-hidden">
+              <div className="relative aspect-[3/4] overflow-hidden p-10">
                 <img
                   src={g.img}
                   alt={g.name}
                   loading="lazy"
                   width={800}
                   height={1024}
-                  className={`h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 ${
+                  className={`h-full w-full object-contain transition-transform duration-700 group-hover:scale-105 ${
                     i % 2 === 0 ? "animate-float" : "animate-float-alt"
                   }`}
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-card/40 via-transparent to-transparent" />
               </div>
               <div className="flex items-center justify-between border-t hairline p-6">
                 <div>
