@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { animate, motion, useInView, useScroll, useTransform, useSpring } from "framer-motion";
 import { Instagram, Mail, Menu } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
@@ -94,12 +94,12 @@ function Nav() {
             ))}
           </nav>
           <div className="flex items-center gap-3">
-            <Link
-              to="/provador"
+            <a
+              href="https://vclothes-app.henriquecgfarias.workers.dev/"
               className="hidden items-center gap-2 rounded-full border hairline px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary sm:inline-flex"
             >
               Experimentar
-            </Link>
+            </a>
             <a
               href="#contato"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.02] active:scale-[0.98]"
@@ -131,12 +131,12 @@ function Nav() {
                   ))}
                 </nav>
                 <SheetClose asChild>
-                  <Link
-                    to="/provador"
+                  <a
+                    href="https://vclothes-app.henriquecgfarias.workers.dev/"
                     className="inline-flex items-center justify-center gap-2 rounded-full border hairline px-6 py-3 text-sm font-medium text-foreground"
                   >
                     Experimentar o provador
-                  </Link>
+                  </a>
                 </SheetClose>
                 <SheetClose asChild>
                   <a
@@ -526,8 +526,8 @@ function Solution() {
         </div>
 
         <div className="mt-20 flex justify-center lg:mt-32">
-          <Link
-            to="/provador"
+          <a
+            href="https://vclothes-app.henriquecgfarias.workers.dev/"
             className="group inline-flex items-center gap-2 rounded-full bg-ink px-8 py-4 text-base font-medium text-primary-foreground transition-transform hover:scale-[1.02] active:scale-[0.98]"
           >
             Experimentar o provador
@@ -536,7 +536,7 @@ function Solution() {
                 <path d="M5 12h14M13 5l7 7-7 7" />
               </svg>
             </span>
-          </Link>
+          </a>
         </div>
       </div>
     </section>
