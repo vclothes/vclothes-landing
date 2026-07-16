@@ -51,8 +51,6 @@ function LogoMark({ className = "h-9 w-9" }: { className?: string }) {
   );
 }
 
-
-
 const navLinks = [
   { href: "#dor", label: "O problema" },
   { href: "#solucao", label: "A solução" },
@@ -105,7 +103,14 @@ function Nav() {
               className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.02] active:scale-[0.98]"
             >
               Fale conosco
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
                 <path d="M5 12h14M13 5l7 7-7 7" />
               </svg>
             </a>
@@ -244,8 +249,8 @@ function Hero() {
             className="mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground md:text-xl"
           >
             A V-Clothes usa visão computacional para transformar duas fotos simples no seu provador
-            virtual. Descubra o tamanho ideal de qualquer roupa e veja como ela fica em você —
-            antes de comprar.
+            virtual. Descubra o tamanho ideal de qualquer roupa e veja como ela fica em você — antes
+            de comprar.
           </motion.p>
 
           <motion.div
@@ -260,7 +265,14 @@ function Hero() {
             >
               Fale com a gente
               <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary-foreground/15 transition-transform group-hover:translate-x-0.5">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                >
                   <path d="M5 12h14M13 5l7 7-7 7" />
                 </svg>
               </span>
@@ -357,7 +369,8 @@ function Pain() {
     },
     {
       stat: "75%",
-      label: "apontam o caimento diferente da foto como a maior dificuldade ao comprar roupa online",
+      label:
+        "apontam o caimento diferente da foto como a maior dificuldade ao comprar roupa online",
     },
   ];
 
@@ -372,8 +385,8 @@ function Pain() {
             </h2>
           </div>
           <p className="max-w-md text-lg leading-relaxed text-muted-foreground lg:col-span-5">
-            Tabelas de medidas confusas, modelagens diferentes entre marcas e a falta de
-            provador digital fazem a gente comprar na esperança — e devolver na frustração.
+            Tabelas de medidas confusas, modelagens diferentes entre marcas e a falta de provador
+            digital fazem a gente comprar na esperança — e devolver na frustração.
           </p>
         </div>
 
@@ -405,7 +418,14 @@ function Pain() {
           >
             Ver como a V-Clothes resolve
             <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary-foreground/15 transition-transform group-hover:translate-x-0.5">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+              >
                 <path d="M5 12h14M13 5l7 7-7 7" />
               </svg>
             </span>
@@ -480,7 +500,10 @@ function Solution() {
                   style={i === 2 ? scanBackground : undefined}
                 >
                   {i === 2 ? (
-                    <div className="absolute inset-0 flex items-center justify-center p-10" style={{ perspective: 1200 }}>
+                    <div
+                      className="absolute inset-0 flex items-center justify-center p-10"
+                      style={{ perspective: 1200 }}
+                    >
                       <motion.img
                         src={stepTryonCutout}
                         alt={s.alt}
@@ -532,7 +555,14 @@ function Solution() {
           >
             Experimentar o provador
             <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary-foreground/15 transition-transform group-hover:translate-x-0.5">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+              >
                 <path d="M5 12h14M13 5l7 7-7 7" />
               </svg>
             </span>
@@ -593,7 +623,9 @@ function Gallery() {
               </div>
               <div className="flex items-center justify-between border-t hairline p-6">
                 <div>
-                  <div className="text-mono text-muted-foreground">Peça {String(i + 1).padStart(2, "0")}</div>
+                  <div className="text-mono text-muted-foreground">
+                    Peça {String(i + 1).padStart(2, "0")}
+                  </div>
                   <div className="mt-1 font-medium text-ink">{g.name}</div>
                 </div>
                 <div className="text-right">
@@ -677,20 +709,20 @@ function Origin() {
               </div>
             </div>
 
-            <div className="group relative hidden aspect-[4/5] overflow-hidden rounded-[2rem] lg:block">
+            <div className="group @container relative hidden aspect-[4/5] overflow-hidden rounded-[2rem] lg:block">
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative h-[400px] w-[520px]">
+                <div className="relative h-[70cqw] w-[91cqw]">
                   <img
                     src={ceapCampus}
                     alt="Vista aérea do campus do CEAP Pedreira"
                     loading="lazy"
-                    className="absolute left-[-30px] top-[-100px] z-[1] h-[400px] w-[400px] rotate-[-5deg] rounded-xl border-4 border-white object-cover shadow-2xl transition-all duration-300 ease-out hover:z-30 hover:scale-105"
+                    className="absolute left-[-5cqw] top-[-18cqw] z-[1] h-[70cqw] w-[70cqw] rotate-[-5deg] rounded-xl border-4 border-white object-cover shadow-2xl transition-all duration-300 ease-out hover:z-30 hover:scale-105"
                   />
                   <img
                     src={ceapCourt}
                     alt="Quadra poliesportiva do CEAP Pedreira"
                     loading="lazy"
-                    className="absolute left-[20px] top-[120px] z-[2] h-[300px] w-[500px] rotate-[4deg] rounded-xl border-4 border-white object-cover shadow-2xl transition-all duration-300 ease-out hover:z-30 hover:scale-105"
+                    className="absolute left-[4cqw] top-[21cqw] z-[2] h-[53cqw] w-[88cqw] rotate-[4deg] rounded-xl border-4 border-white object-cover shadow-2xl transition-all duration-300 ease-out hover:z-30 hover:scale-105"
                   />
                 </div>
               </div>
@@ -730,8 +762,8 @@ function Contact() {
             <span className="italic text-primary-foreground/70">sobre a V-Clothes?</span>
           </h2>
           <p className="relative mx-auto mt-8 max-w-lg text-primary-foreground/70">
-            Dúvidas, parcerias ou curiosidade sobre o projeto? Manda uma mensagem no Instagram ou
-            um e-mail — a gente responde.
+            Dúvidas, parcerias ou curiosidade sobre o projeto? Manda uma mensagem no Instagram ou um
+            e-mail — a gente responde.
           </p>
 
           <div className="relative mx-auto mt-10 flex max-w-md flex-col items-center gap-3 sm:flex-row sm:justify-center">
@@ -767,9 +799,7 @@ function Footer() {
           <span className="text-display text-lg">V-Clothes</span>
           <span className="text-mono ml-3 text-muted-foreground">© 2026</span>
         </div>
-        <div className="text-mono text-muted-foreground">
-          Um projeto CEAP · Pedreira, SP
-        </div>
+        <div className="text-mono text-muted-foreground">Um projeto CEAP · Pedreira, SP</div>
         <div className="flex gap-6">
           <a
             href="https://instagram.com/vclothes_pjt"
@@ -810,4 +840,3 @@ function Index() {
     </div>
   );
 }
-
