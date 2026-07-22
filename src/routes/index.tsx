@@ -716,13 +716,13 @@ function Origin() {
                     src={ceapCampus}
                     alt="Vista aérea do campus do CEAP Pedreira"
                     loading="lazy"
-                    className="absolute left-[-5cqw] top-[-18cqw] z-[1] h-[70cqw] w-[70cqw] rotate-[-5deg] rounded-xl border-4 border-white object-cover shadow-2xl transition-all duration-300 ease-out hover:z-30 hover:scale-105"
+                    className="absolute left-[3cqw] top-[-18cqw] z-[1] h-[70cqw] w-[70cqw] rotate-[-5deg] rounded-xl border-4 border-white object-cover shadow-2xl transition-all duration-300 ease-out hover:z-30 hover:scale-105"
                   />
                   <img
                     src={ceapCourt}
                     alt="Quadra poliesportiva do CEAP Pedreira"
                     loading="lazy"
-                    className="absolute left-[4cqw] top-[21cqw] z-[2] h-[53cqw] w-[88cqw] rotate-[4deg] rounded-xl border-4 border-white object-cover shadow-2xl transition-all duration-300 ease-out hover:z-30 hover:scale-105"
+                    className="absolute left-[8cqw] top-[21cqw] z-[2] h-[48cqw] w-[79cqw] rotate-[4deg] rounded-xl border-4 border-white object-cover shadow-2xl transition-all duration-300 ease-out hover:z-30 hover:scale-105"
                   />
                 </div>
               </div>
